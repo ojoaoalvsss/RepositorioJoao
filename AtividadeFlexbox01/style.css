@@ -1,0 +1,75 @@
+body {
+    margin: 0;
+    background-color: #f8f8f8;
+    color: #212427
+}
+
+h1 {
+    width: fit-content;
+    margin: auto;
+}
+
+.caixa {
+    border-radius: 5px;
+}
+
+.pai {
+    width: 80%;
+    height: 350px;
+    margin: auto;
+    background-color: antiquewhite;
+    border: solid 2px #212427;
+
+    position: relative;
+}
+
+.filho {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 80px;
+    color: black;
+    font-weight: bold;
+    position: absolute;
+}
+
+/* Bola 1 no topo esquerdo */
+.cor1 {
+    background-color: #ED145B;
+    top: 0;
+    left: 0;
+}
+
+/* Bola 2 no canto inferior direito */
+.cor2 {
+    background-color: #63B1BC;
+    bottom: 0;
+    right: 0;
+}
+
+/* Bola 3 no centro */
+.cor3 {
+    background-color: #EFB661;
+    top: 40%;
+    left: 35%;
+}
+
+
+.instrucoes {
+    width: 80%;
+    margin: auto;
+    text-align: left;
+}
+
+.footer {
+    background-color: antiquewhite;
+    height: 130px;
+    margin-top: 50px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+img {
+    width: 20%;
+}
