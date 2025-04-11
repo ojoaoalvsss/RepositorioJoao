@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    font-family: "Barlow", 'Courier New', Courier, monospace;
+}
+
+body{
+    margin: 0;
+    background-color: black;
+}
+
+.header{
+    border-bottom: solid 3px aquamarine;
+}/* Adicionar aqui toda a estilização criada para sua aplicação. */
+
+
+.header .container .titulo{
+    color: aqua;
+}
+
+.container .navbar{
+    color: rgb(204, 226, 5);
+
+    list-style-type: none;
+    display: flex;
+    width: 350px;
+    justify-content: space-around;
+}
+
+.navbar a{
+    color:  rgb(204, 226, 5);
+    text-decoration: none;
+}
+
+ 
+
+.container{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+}
+
+.header .container{
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    width: 80%;
+}
+
+/* BANNER */
+
+.banner .container{
+    width: 500px;
+    height: 100%;
+}
+
+.container{
+    display: flex;
+    margin: auto;
+    width: 80%;
+}
+
+
+.banner{
+    background-image: url(../assets/imgs/bg-jelly-fish-para-home.png);
+    height: 400px;
+    display: flex;
+}
+
+.banner .container p{
+    color: white;
+    font-size: 54px;
+}
+
+.banner .container p span{
+    font-weight: 800;
+}
+
+/* SOCIAL */
+
+.social{
+    background: white;
+}
+
+.social .container{
+    justify-content: space-evenly;
+}
+
+.box img{
+    width: 100px;
+}
+
+.boxes{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px 0px;
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box p{
+    font-size: 17px;
+    text-align: center;
+}
+
+.box h4{
+    color: crimson;
+    font-weight: 600;
+}
+
+/* FOOTER */
+
+.footer{
+    background: darkcyan;
+}
+
+.footer .container{
+    justify-content: center;
+    align-items: center;
+    color: white;
+
+    height: 200px;
+}
+
+
+
+/* LOGIN */
+
+
+.navbar .agora {
+    border-bottom: solid 2px yellow;
+}
+
+.login {
+    width: 100%; 
+    height: auto;
+    padding: 40px 0; 
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.login .container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.card.card-login {
+    background: gray;
+    height: 300px;
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.container .card.card-login .formulario {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.container .card.card-login h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    text-align: center;
+}
+
+.container .card.card-login .formulario input{
+    border: solid 1px darkcyan;
+}
+
+.container .card.card-login .formulario span{
+    color: crimson;
+    font-size: 20px;
+    font-family: "Barlow",'Courier New', Courier, monospace;
+}
+
+.container .card.card-login .formulario .botao{
+    border-radius: 5px;
+    border: solid 2px crimson;
+    color: whitesmoke;
+    font-weight: 500;
+    background-color: brown;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+
+.container .card.card-login .formulario .botao:hover{
+    content: "";
+    background-color: darkcyan;
+    border: 2px solid black;
+    
+}
+
+.footer {
+    background: darkcyan;
+}
+
+.footer .container {
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 200px;
+}
+
