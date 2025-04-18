@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Dois Gráficos com Chart.js</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <!-- Primeiro gráfico: Linhas -->
+    <canvas id="myChart" width="600" height="400"></canvas>
+
+    <!-- Segundo gráfico: Barras -->
+    <canvas id="myChart2" width="600" height="400"></canvas>
+
+    <script>
+      // Gráfico de Linhas - Temperatura e Umidade por Hora
+      const ctx1 = document.getElementById('myChart');
+      new Chart(ctx1, {
+        type: 'line',
+        data: {
+          labels: ['12:00', '13:00', '14:00', '15:00', '16:00', '17:00'],
+          datasets: [
+            {
+              label: 'Temperatura (°C)',
+              data: [30, 29, 28, 25, 22, 23],
+              borderColor: 'red',
+              borderWidth: 1
+            },
+            {
+              label: 'Umidade (%)',
+              data: [80, 82, 80, 85, 80, 83],
+              borderColor: 'blue',
+              borderWidth: 1
+            }
+          ]
+        },
+        options: {
+          scales: {
+            y: {
+              beginAtZero: true
+            }
+          }
+        }
+      });
+
+      // Gráfico de Barras - Temperatura Média e Umidade Média por Mês
+      const ctx2 = document.getElementById('myChart2');
+      new Chart(ctx2, {
+        type: 'bar',
+        data: {
+          labels: ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho'],
+          datasets: [
+            {
+              label: 'Temperatura Média (°C)',
+              data: [22, 24, 27, 23, 20, 18],
+              backgroundColor: 'red'
+            },
+            {
+              label: 'Umidade Média (%)',
+              data: [90, 89, 93, 87, 88, 82],
+              backgroundColor: 'blue'
+            }
+          ]
+        },
+        options: {
+          scales: {
+            y: {
+              beginAtZero: true
+            }
+          }
+        }
+      });
+    </script>
+</body>
+</html>
